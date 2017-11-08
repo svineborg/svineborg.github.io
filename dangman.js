@@ -1,0 +1,1 @@
+document.getElementByYid('demo').innerHTML = "ya clicked me oh man"
