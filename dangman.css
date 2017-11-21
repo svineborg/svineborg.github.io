@@ -8,4 +8,13 @@
 .button{
 	background: #eee;
 	margin: auto;
+	width:75px;
+	padding:10px;
+	text-align:center;
+}
+
+.input{
+	width:50%;
+	margin: auto;
+	padding:10%;
 }
