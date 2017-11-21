@@ -1,0 +1,11 @@
+.block {
+	background: #d02424;
+	margin: auto;
+	width: 50%;
+	padding:5px;
+}
+
+.button{
+	background: #eee;
+	margin: auto;
+}

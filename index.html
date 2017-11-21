@@ -1,14 +1,15 @@
 <html>
 	<head>
 		<script src="dangman.js"></script>
+		<link rel="stylesheet" href="dangman.css">
 	</head>
-	<body>
-		<div id="word"></div>
-		<div id="lives"></div>
-		<div id="message"></div>
-		<div id="guesses"></div>
-		<input id="guess" type="text" value="enter a guess"></input>
-		<button id="submit" onclick="submit(document.getElementById('guess').value)">submit</button>
-		<button id="reset" onclick="reset()">reset</button>
+	<body onload="reset()">
+		<div id="word" class='word block'></div>
+		<div id="lives" class='lives block'></div>
+		<div id="message" class='message block'></div>
+		<div id="guesses" class='guesses block'></div>
+		<input id="guess" class='input' type="text" value="enter a guess"></input>
+		<button id="submit" class='submit button' onclick="submit(document.getElementById('guess').value)">submit</button>
+		<button id="reset" class='reset button' onclick="reset()">reset</button>
 	</body>
 </html>
