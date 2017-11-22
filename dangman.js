@@ -37,9 +37,9 @@ function reset(){
 function checkGuess(a_guess){
 	acceptableGuess = false
 	if(a_guess.length != 1){
-		message = "NO! One character only."
+		message = "One character only, bad guess >:( "
 	} else if ( /[a-z]/i.test(a_guess) == false) {
-		message = "NO! Only the alphabets, poopoohead!"
+		message = "Only the alphabets, poopoohead! Bad guess >:( "
 	} else {
 		message = "Good guess :)"
 		acceptableGuess = true
@@ -61,11 +61,12 @@ function submit(a_guess){
 	if(checkGuess(a_guess)){
 	//is the guess an acceptable format?
 		if(guesses.indexOf(a_guess.toLowerCase()) != -1){
-			message += "You already guessed " + a_guess + " ya dingus!"
+			message += " But you already guessed " + a_guess + " ya dingus!"
 		} else {
 			guesses.push(a_guess.toLowerCase())
 			if(word.indexOf(a_guess) == -1){
 				loseLife(1)
+				message += " but " + a_guess + " isn't in the word, pal"
 			}
 		}
 	}

@@ -1,20 +1,37 @@
+body{
+	background:#1DA1F2;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
+  Helvetica, Arial, "Lucida Grande", sans-serif;
+  }
+
 .block {
-	background: #d02424;
+	background: #FFF;
 	margin: auto;
-	width: 50%;
-	padding:5px;
+	padding:10px;
 }
 
 .button{
 	background: #eee;
-	margin: auto;
 	width:75px;
-	padding:10px;
 	text-align:center;
 }
 
 .input{
-	width:50%;
-	margin: auto;
-	padding:10%;
+	width:30px;
+	padding:1px;
+}
+
+#wrapper{
+	text-align:center;
+	width:75%;
+	padding:auto;
+	margin:auto;
+}
+
+#logo{
+	display:block;
+	width:250px;
+	height:250px;
+	margin:auto;
+	padding:25px;
 }
